@@ -1,0 +1,100 @@
+body {
+  margin: 0px !important;
+  overflow: visible;
+}
+
+#main {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+#main .mapContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#main .mapContainer #cityImage {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+}
+#main .mapContainer #mapHeaderContent {
+  height: 6vw;
+  font-size: 1.3vw;
+}
+#main .mapContainer #mapHeaderContent #submitButton {
+  background-color: #2bb0bf;
+  border: none;
+  border-radius: 12px;
+  padding: 20px 40px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 5%;
+}
+#main .mapContainer .canvasContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#main .mapContainer .canvasContainer canvas {
+  position: absolute;
+  z-index: 3;
+}
+
+#resultContainer {
+  display: none;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0 2vw;
+  width: 30%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#resultContainer .results {
+  display: flex;
+  justify-content: flex-start;
+}
+#resultContainer .header {
+  width: 100%;
+}
+#resultContainer .header h2 {
+  font-size: 2rem;
+  margin: 0 auto 2%;
+}
+#resultContainer table {
+  border: solid;
+  margin: 0;
+  background-color: #fcfcfc;
+}
+#resultContainer table tr td {
+  border: none;
+}
+#resultContainer table td {
+  text-align: center;
+}
+#resultContainer table .invisibleCell {
+  color: #fcfcfc;
+  border: #fcfcfc;
+}
+#resultContainer table .highlightedCell {
+  background-color: #00dd00;
+}
+#resultContainer table .bufferCell {
+  background-color: #000000;
+}
+#resultContainer .resultBestParking {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 2vw;
+  width: 55%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#resultContainer .resultBestParking #bestParkingResult {
+  margin: 0;
+  background-color: #fcfcfc;
+}
+
+/*# sourceMappingURL=second_page.css.map */

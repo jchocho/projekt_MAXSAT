@@ -1,0 +1,109 @@
+body {
+  background-image: url("../images/cba.png");
+  background-size: cover;
+  color: white;
+}
+
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#main #formContainer {
+  width: 30vw;
+  margin: 5vw;
+}
+#main .mapContainer {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  left: 20px;
+  bottom: 20px;
+}
+#main .canvasContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#main .canvasContainer canvas {
+  border: solid 2px;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  z-index: 2;
+}
+#main .canvasContainer #cityImage {
+  position: absolute;
+  z-index: 1;
+  left: 22px;
+  bottom: 22px;
+}
+#main .canvasContainer #mapHeader {
+  height: 6vw;
+  font-size: 1.3vw;
+}
+
+#resultContainer {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5vw;
+  width: 30%;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 90vh;
+}
+#resultContainer .results {
+  display: flex;
+  justify-content: flex-start;
+}
+#resultContainer .header {
+  width: 100%;
+}
+#resultContainer .header h2 {
+  font-size: 2rem;
+  margin: 0 auto 2%;
+}
+#resultContainer table {
+  border: solid;
+  margin: 0;
+}
+#resultContainer table tr td {
+  border: none;
+}
+#resultContainer table td {
+  text-align: center;
+}
+#resultContainer table .invisibleCell {
+  color: #fcfcfc;
+  border: #fcfcfc;
+}
+#resultContainer table .highlightedCell {
+  background-color: #00dd00;
+}
+#resultContainer table .bufferCell {
+  background-color: #000000;
+}
+#resultContainer .resultBestParking {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 2vw;
+  width: 55%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#resultContainer .resultBestParking #bestParkingResult {
+  margin: 0;
+}
+
+fieldset {
+  background: rgba(56, 56, 56, 0.5);
+}
+
+.bestParkingP {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=final_page.css.map */

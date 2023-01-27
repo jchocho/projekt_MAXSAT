@@ -1,0 +1,141 @@
+body
+    margin: 0px !important
+    overflow: visible
+
+#main
+    font-family: Arial, Helvetica, sans-serif
+    width: 100%
+
+    .mapContainer
+        width: 100vw
+        height: 100vh
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: flex-start
+        //background-image: url("images/1747.jpg")
+        #cityImage
+            width: 100vw
+            height: 100vh
+            position: absolute
+            z-index: 2
+
+        #mapHeaderContent
+            height: 6vw
+            font-size: 1.3vw
+
+            #submitButton
+                background-color: #2bb0bf
+                border: none
+                border-radius: 12px
+                padding: 20px 40px
+                font-weight: bold
+                font-size: 20px
+                margin-left: 5%
+
+        .canvasContainer
+            display: flex
+            justify-content: flex-start
+            align-items: flex-start
+
+            canvas
+                position: absolute
+                z-index: 3
+                // canvas size is set in .js file
+
+
+// Second page
+
+#resultContainer
+
+
+    display: none
+    justify-content: flex-start
+    flex-wrap: wrap
+
+    padding: 0 2vw
+
+    width: 30%
+
+    font-family: Arial, Helvetica, sans-serif
+    //text-align: center
+
+    .results
+        display: flex
+        justify-content: flex-start
+
+    .header
+        width: 100%
+        h2
+            font-size: 2rem
+            margin: 0 auto 2%
+
+    table
+        border: solid
+        margin: 0
+        background-color: #fcfcfc
+
+        tr td
+            border: none
+
+        td
+            text-align: center
+
+        .invisibleCell
+            color: #fcfcfc
+            border: #fcfcfc
+
+        .highlightedCell
+            background-color: #00dd00
+
+        .bufferCell
+            background-color: #000000
+
+
+    .resultBestParking
+        display: flex
+        justify-content: flex-start
+        flex-wrap: wrap
+
+        margin: 2vw
+
+        width: 55%
+
+        font-family: Arial, Helvetica, sans-serif
+
+            //text-align: center
+
+        #bestParkingResult
+            margin: 0
+            background-color: #fcfcfc
+
+
+
+
+
+
+
+    //.table
+    //    display: flex
+    //
+    //#myData
+    //    margin-left: auto
+    //    margin-right: auto
+    //
+    //table
+    //    border-spacing: 0
+    //
+    //    th td
+    //        font-size: 18px
+    //
+    //    #headerTable
+    //        background-color: #cccccc
+    //        font-size: 20px
+    //        font-weight: bold
+    //
+    //
+    //table tr td
+    //    border: 0.5px solid black
+    //    padding: 10px 30px 10px 30px
+
+
